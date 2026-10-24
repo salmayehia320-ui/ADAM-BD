@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Adam's 1st Birthday Invitation</title>
+<style>
+:root{--blue:#244f78;--blue2:#6f9fc6;--cream:#fff8e9;--gold:#c99b45;--ink:#244563}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:radial-gradient(ellipse at top,#e9f2fa,#c9d9e9 60%,#9eb9d1);font-family:Georgia,'Times New Roman',serif;color:var(--ink);overflow-x:hidden}
+.scene{width:min(94vw,760px);padding:30px 0 22px;text-align:center}.hint{font:600 13px/1.5 system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#234866;margin:0 0 20px}.card{position:relative;width:min(88vw,620px);height:430px;margin:auto;perspective:1800px;filter:drop-shadow(0 22px 25px #35506a44);cursor:pointer;outline:none}.inside{position:absolute;inset:0;border-radius:12px;background:var(--cream);border:2px solid #d7b978;box-shadow:inset 0 0 0 8px #fffdf6;display:flex;align-items:center;justify-content:center;overflow:hidden}.inside:before,.inside:after{content:'✦  ·  ♡  ·  ✦';position:absolute;color:#d4aa5b;font-size:20px;letter-spacing:12px}.inside:before{top:15px;left:18px}.inside:after{bottom:15px;right:18px}.leftpage,.rightpage{position:absolute;top:0;bottom:0;width:50%;background:linear-gradient(135deg,#fffaf0,#f5e5c5);border:2px solid #d8bd83;box-shadow:inset 0 0 0 7px #fffaf0;display:flex;align-items:center;justify-content:center;backface-visibility:hidden}.leftpage{left:0;border-radius:12px 0 0 12px}.rightpage{right:0;border-radius:0 12px 12px 0}.fold{position:absolute;left:50%;top:0;bottom:0;width:2px;background:#d2b579;z-index:1}.front{position:absolute;inset:0;transform-origin:left center;transform-style:preserve-3d;transition:transform 1.25s cubic-bezier(.2,.75,.18,1);z-index:3}.card.open .front{transform:rotateY(-155deg)}.cover{position:absolute;inset:0;border-radius:12px;border:3px solid #d3ae62;background:linear-gradient(145deg,#fdf6e8,#e5eef7);backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;box-shadow:inset 0 0 0 9px #fffaf1}.cover:after{content:'';position:absolute;inset:15px;border:1.5px dashed #85a6c4;border-radius:8px;pointer-events:none}.cover-back{position:absolute;inset:0;transform:rotateY(180deg);backface-visibility:hidden;border-radius:12px;background:#f4e6c8;border:2px solid #d3ae62}.ribbon{position:absolute;top:0;left:50%;transform:translateX(-50%);width:76px;height:90px;background:repeating-linear-gradient(45deg,#6f9fc6 0 8px,#a9c7df 8px 16px);clip-path:polygon(0 0,100% 0,100% 100%,50% 78%,0 100%);opacity:.95}.moon{font-size:40px;color:#c89a43;margin:14px 0 4px}.tiny{font:600 11px system-ui,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#557c9d}.cover h1{font-size:clamp(36px,8vw,60px);line-height:.98;margin:12px 0;color:var(--blue);font-weight:normal;font-style:italic}.cover .one{font-size:30px;color:#bf9140;letter-spacing:.12em}.cover .tap{font:600 12px system-ui,sans-serif;letter-spacing:.12em;color:#557c9d;margin-top:25px}.cover .stars{font-size:21px;color:#c89a43;letter-spacing:12px}.insidecontent{position:relative;z-index:1;text-align:center;width:100%;padding:30px 28px}.insidecontent .bism{font-size:15px;color:#5d82a1;margin-bottom:9px}.insidecontent h2{font-size:clamp(27px,5vw,43px);font-style:italic;font-weight:normal;color:var(--blue);margin:6px 0}.insidecontent p{font-size:15px;line-height:1.45;margin:10px auto;max-width:420px}.details{display:flex;justify-content:center;gap:22px;margin:19px auto 10px;font-size:14px}.details div{padding:0 14px}.details div+div{border-left:1px solid #d3b36f}.details strong{display:block;font-size:19px;font-weight:normal;color:var(--blue)}.bear{font-size:38px;margin:4px}.bottom{font-size:13px!important;font-style:italic;color:#567d9c}.sparkle{position:absolute;font-size:24px;color:#c99b45}.s1{top:30px;left:30px}.s2{top:48px;right:32px}.s3{bottom:35px;left:36px}.s4{bottom:42px;right:36px}.instructions{font:13px system-ui,sans-serif;color:#254b6b;margin-top:18px}.btn{margin-top:14px;border:0;border-radius:99px;padding:12px 24px;background:#244f78;color:white;font:600 14px system-ui,sans-serif;box-shadow:0 5px 12px #244f7830;cursor:pointer}.btn:hover{background:#173b5e}.card:focus-visible{outline:3px solid #c99b45;outline-offset:6px}
+@media(max-width:520px){.card{height:500px}.insidecontent{padding:24px 14px}.insidecontent p{font-size:13px}.details{gap:5px}.details div{padding:0 9px}.cover h1{font-size:39px}.cover .one{font-size:25px}}
+@media(prefers-reduced-motion:reduce){.front{transition:none}}
+</style></head>
+<body><main class="scene"><p class="hint">A little surprise for a little prince</p>
+<div class="card" id="card" role="button" tabindex="0" aria-label="Open Adam's birthday invitation" aria-expanded="false">
+  <div class="inside"><span class="sparkle s1">✦</span><span class="sparkle s2">♡</span><span class="sparkle s3">✦</span><span class="sparkle s4">★</span>
+    <div class="leftpage"></div><div class="rightpage"></div><div class="fold"></div>
+    <div class="insidecontent"><div class="bism">A day full of love &amp; joy</div><div class="tiny">Please join us to celebrate</div><h2>Adam’s 1st Birthday</h2><p>One year of tiny hands, big smiles, and endless love. We’d be so happy to celebrate this special milestone with you!</p>
+      <div class="details"><div><span>📅</span><strong>Friday, 30</strong>October 2026</div><div><span>📍</span><strong>Smouha</strong>Fwzy Moaz</div></div><div class="bear">🧸 🎂 🎈</div><p class="bottom">Lots of love, <strong>Adam</strong> ♡</p>
+    </div>
+  </div>
+  <div class="front"><div class="cover"><div class="ribbon"></div><div class="moon">☾</div><div class="tiny">You're invited to</div><h1>Adam’s<br>Birthday</h1><div class="one">ONE • YEAR</div><div class="stars">✦ ★ ✦</div><div class="tap">A LITTLE CARD, A BIG SURPRISE</div></div><div class="cover-back"></div></div>
+</div>
+<button class="btn" id="toggle">Open the invitation ✨</button><p class="instructions">Tap the card (or the button) to open and close it.</p></main>
+<script>
+(function () {
+  function setupInvitation() {
+    const card = document.getElementById('card');
+    const btn = document.getElementById('toggle');
+    if (!card || !btn) return;
+
+    function toggleInvitation() {
+      const isOpen = card.classList.toggle('open');
+      card.setAttribute('aria-expanded', String(isOpen));
+      card.setAttribute('aria-label', isOpen
+        ? 'Close Adam’s birthday invitation'
+        : 'Open Adam’s birthday invitation');
+      btn.textContent = isOpen
+        ? 'Close the invitation 💙'
+        : 'Open the invitation ✨';
+    }
+
+    card.addEventListener('click', toggleInvitation);
+    card.addEventListener('keydown', function (event) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        toggleInvitation();
+      }
+    });
+    btn.addEventListener('click', function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+      toggleInvitation();
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupInvitation);
+  } else {
+    setupInvitation();
+  }
+})();
+</script></body></html>
